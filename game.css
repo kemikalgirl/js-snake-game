@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+:root {
+    --white: rgb(255, 255, 255);
+    --yellow: rgb(255, 221, 2);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+}
+
+
+.container {
+    animation-duration: 0.7s;
+    animation-name: popout;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: var(--white);
+}
+
+@keyframes popout {
+    from {
+      transform: scale(0.1)
+}
+    to {
+      transform: scale(1)
+    }
+}
+
+#status-bar {
+    margin-bottom: 12px;
+    display: flex;
+}
+
+#status-bar > * {
+    margin-right: 8px;
+}
+
+.bi {
+    font-size: 24px;
+}
+
+#restart-box {
+    margin-left: auto;
+    margin-right: 0
+}
+
+button {
+    border: 0;
+    background-color: var(--white);
+}
+
+button:hover i {
+    cursor: pointer;
+    color: rgb(105, 105, 105);
+}
+
+#board {
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px 2px inset;
+}
